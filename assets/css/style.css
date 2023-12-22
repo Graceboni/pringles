@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    
+}
+:root{
+    --radius-1: 1.5rem;
+    --dark-color:#2c2c2c;
+    --primary-color:#fff;
+    --secondary-color:#16553b;
+    --light-green:#3f906b;
+    --light-white:#fffefee3;
+    --color-bg: #000;
+}
