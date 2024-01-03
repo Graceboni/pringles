@@ -26,6 +26,9 @@ header{
 a{
     text-decoration: none;
 }
+ul{
+    padding-left: 0;
+}
 .logo{
     width: 150px;
 }
@@ -46,13 +49,11 @@ a{
     height: 600px;
     margin-left: -10rem;
 }
-.slide{
-    padding: 10rem 0;
-}
-#slide-1{
+
+.slide-1{
     background-color: var(--red-bg);
 }
-#slide-2{
+.slide-2{
     background-color: var(--purple-bg);
 }
 .product{
@@ -60,7 +61,7 @@ a{
 }
 .product-description{
     color: var(--text-color);
-    padding-left: 6rem;
+    padding-left: 3rem;
 }
 .product-description h2{
     text-transform: uppercase;
@@ -69,6 +70,8 @@ a{
 }
 .product-img-col{
     padding-right: 0;
+    animation: slideInRight, slideOutLeft;
+    animation-duration:2s;
 }
 .primary-btn{
     background: var(--black) ;
@@ -82,10 +85,14 @@ a{
    background-color: var(--text-color);
 }
 
-[data-component="slideshow"] .slide {
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+.mySlides {
     display: none;
-  }
+    padding: 10rem 0;
+    
+}
 
-  [data-component="slideshow"] .slide.active {
-    display: block;
-  }
